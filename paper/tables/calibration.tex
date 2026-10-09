@@ -1,0 +1,13 @@
+\begin{tabular}{lccc|ccc}\toprule
+ & \multicolumn{3}{c}{Dataset A} & \multicolumn{3}{c}{Dataset B}\\
+Model + score & ECE$\downarrow$ & Brier$\downarrow$ & NLL$\downarrow$ & ECE$\downarrow$ & Brier$\downarrow$ & NLL$\downarrow$\\\midrule
+LogReg-SGA + entropy & 0.130\,{\scriptsize$\pm$0.024} & 0.174\,{\scriptsize$\pm$0.031} & 0.312\,{\scriptsize$\pm$0.039} & 0.044\,{\scriptsize$\pm$0.003} & 0.073\,{\scriptsize$\pm$0.003} & 0.154\,{\scriptsize$\pm$0.005}\\
+RBF-SVM + entropy & 0.068\,{\scriptsize$\pm$0.022} & 0.147\,{\scriptsize$\pm$0.037} & 0.403\,{\scriptsize$\pm$0.426} & 0.011\,{\scriptsize$\pm$0.004} & 0.041\,{\scriptsize$\pm$0.003} & 0.096\,{\scriptsize$\pm$0.008}\\
+GradBoost + entropy & 0.075\,{\scriptsize$\pm$0.020} & 0.149\,{\scriptsize$\pm$0.036} & 0.314\,{\scriptsize$\pm$0.094} & 0.033\,{\scriptsize$\pm$0.003} & 0.047\,{\scriptsize$\pm$0.004} & 0.108\,{\scriptsize$\pm$0.007}\\
+LogReg ensemble (H) & 0.141\,{\scriptsize$\pm$0.022} & 0.188\,{\scriptsize$\pm$0.031} & 0.334\,{\scriptsize$\pm$0.036} & 0.047\,{\scriptsize$\pm$0.004} & 0.073\,{\scriptsize$\pm$0.003} & 0.154\,{\scriptsize$\pm$0.005}\\
+LogReg ensemble (MI) & 0.141\,{\scriptsize$\pm$0.022} & 0.188\,{\scriptsize$\pm$0.031} & 0.334\,{\scriptsize$\pm$0.036} & 0.047\,{\scriptsize$\pm$0.004} & 0.073\,{\scriptsize$\pm$0.003} & 0.154\,{\scriptsize$\pm$0.005}\\
+EDL-Linear (H) & 0.133\,{\scriptsize$\pm$0.025} & 0.189\,{\scriptsize$\pm$0.031} & 0.334\,{\scriptsize$\pm$0.035} & 0.072\,{\scriptsize$\pm$0.003} & 0.078\,{\scriptsize$\pm$0.003} & 0.173\,{\scriptsize$\pm$0.004}\\
+EDL-Linear ($u$) & 0.133\,{\scriptsize$\pm$0.025} & 0.189\,{\scriptsize$\pm$0.031} & 0.334\,{\scriptsize$\pm$0.035} & 0.072\,{\scriptsize$\pm$0.003} & 0.078\,{\scriptsize$\pm$0.003} & 0.173\,{\scriptsize$\pm$0.004}\\
+EDL-RFF (H) & 0.070\,{\scriptsize$\pm$0.016} & 0.151\,{\scriptsize$\pm$0.028} & 0.260\,{\scriptsize$\pm$0.040} & 0.058\,{\scriptsize$\pm$0.004} & 0.089\,{\scriptsize$\pm$0.009} & 0.183\,{\scriptsize$\pm$0.013}\\
+EDL-RFF ($u$) & 0.070\,{\scriptsize$\pm$0.016} & 0.151\,{\scriptsize$\pm$0.028} & 0.260\,{\scriptsize$\pm$0.040} & 0.058\,{\scriptsize$\pm$0.004} & 0.089\,{\scriptsize$\pm$0.009} & 0.183\,{\scriptsize$\pm$0.013}\\
+\bottomrule\end{tabular}

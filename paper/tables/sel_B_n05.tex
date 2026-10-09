@@ -1,0 +1,12 @@
+\begin{tabular}{lcccccc}\toprule
+Model + score & BA$_{1.0}$ & BA$_{0.7}$ & BA$_{0.7}^{\text{rand}}$ & $\Delta$BER & AURC$\downarrow$ & ECE$\downarrow$\\\midrule
+LogReg-SGA + entropy & 0.865\,{\scriptsize$\pm$0.006} & 0.920\,{\scriptsize$\pm$0.011} & 0.866\,{\scriptsize$\pm$0.005} & 40\% & 0.098\,{\scriptsize$\pm$0.007} & 0.047\,{\scriptsize$\pm$0.005}\\
+RBF-SVM + entropy & 0.876\,{\scriptsize$\pm$0.012} & 0.888\,{\scriptsize$\pm$0.030} & 0.876\,{\scriptsize$\pm$0.012} & 10\% & 0.109\,{\scriptsize$\pm$0.017} & 0.011\,{\scriptsize$\pm$0.005}\\
+GradBoost + entropy & 0.893\,{\scriptsize$\pm$0.016} & 0.918\,{\scriptsize$\pm$0.018} & 0.894\,{\scriptsize$\pm$0.016} & 23\% & 0.084\,{\scriptsize$\pm$0.014} & 0.034\,{\scriptsize$\pm$0.004}\\
+LogReg ensemble (H) & 0.866\,{\scriptsize$\pm$0.004} & 0.918\,{\scriptsize$\pm$0.010} & 0.867\,{\scriptsize$\pm$0.004} & 39\% & 0.098\,{\scriptsize$\pm$0.008} & 0.049\,{\scriptsize$\pm$0.005}\\
+LogReg ensemble (MI) & 0.866\,{\scriptsize$\pm$0.004} & 0.914\,{\scriptsize$\pm$0.016} & 0.867\,{\scriptsize$\pm$0.004} & 36\% & 0.104\,{\scriptsize$\pm$0.008} & 0.049\,{\scriptsize$\pm$0.005}\\
+EDL-Linear (H) & 0.864\,{\scriptsize$\pm$0.008} & 0.913\,{\scriptsize$\pm$0.010} & 0.865\,{\scriptsize$\pm$0.007} & 36\% & 0.102\,{\scriptsize$\pm$0.007} & 0.072\,{\scriptsize$\pm$0.003}\\
+EDL-Linear ($u$) & 0.864\,{\scriptsize$\pm$0.008} & 0.890\,{\scriptsize$\pm$0.017} & 0.865\,{\scriptsize$\pm$0.007} & 20\% & 0.119\,{\scriptsize$\pm$0.009} & 0.072\,{\scriptsize$\pm$0.003}\\
+EDL-RFF (H) & 0.852\,{\scriptsize$\pm$0.013} & 0.883\,{\scriptsize$\pm$0.027} & 0.852\,{\scriptsize$\pm$0.014} & 21\% & 0.122\,{\scriptsize$\pm$0.017} & 0.059\,{\scriptsize$\pm$0.004}\\
+EDL-RFF ($u$) & 0.852\,{\scriptsize$\pm$0.013} & 0.849\,{\scriptsize$\pm$0.029} & 0.852\,{\scriptsize$\pm$0.014} & -2\% & 0.143\,{\scriptsize$\pm$0.019} & 0.059\,{\scriptsize$\pm$0.004}\\
+\bottomrule\end{tabular}

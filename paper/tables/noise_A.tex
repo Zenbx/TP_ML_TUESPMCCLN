@@ -1,0 +1,11 @@
+\begin{tabular}{lccccc}\toprule
+Model & BA clean & BA 5\% & drop & BA 20\% & drop\\\midrule
+LogReg ($\lambda$: $10^{-4}\!\to\!0.05$) & 0.801\,{\scriptsize$\pm$0.061} & 0.796\,{\scriptsize$\pm$0.057} & 0.005\,{\scriptsize$\pm$0.025} & 0.765\,{\scriptsize$\pm$0.054} & 0.035\,{\scriptsize$\pm$0.041}\\
+\quad robust variant & 0.797\,{\scriptsize$\pm$0.056} & 0.785\,{\scriptsize$\pm$0.058} & 0.012\,{\scriptsize$\pm$0.024} & 0.754\,{\scriptsize$\pm$0.061} & 0.042\,{\scriptsize$\pm$0.044}\\
+RBF-SVM ($C$: 1$\to$0.1) & 0.761\,{\scriptsize$\pm$0.067} & 0.718\,{\scriptsize$\pm$0.078} & 0.043\,{\scriptsize$\pm$0.038} & 0.722\,{\scriptsize$\pm$0.067} & 0.039\,{\scriptsize$\pm$0.045}\\
+\quad robust variant & 0.758\,{\scriptsize$\pm$0.066} & 0.719\,{\scriptsize$\pm$0.069} & 0.039\,{\scriptsize$\pm$0.039} & 0.717\,{\scriptsize$\pm$0.070} & 0.040\,{\scriptsize$\pm$0.053}\\
+Boosted trees (depth 3$\to$2, shrinkage) & 0.819\,{\scriptsize$\pm$0.043} & 0.813\,{\scriptsize$\pm$0.061} & 0.006\,{\scriptsize$\pm$0.042} & 0.787\,{\scriptsize$\pm$0.069} & 0.032\,{\scriptsize$\pm$0.054}\\
+\quad robust variant & 0.829\,{\scriptsize$\pm$0.051} & 0.822\,{\scriptsize$\pm$0.054} & 0.007\,{\scriptsize$\pm$0.019} & 0.791\,{\scriptsize$\pm$0.063} & 0.037\,{\scriptsize$\pm$0.035}\\
+EDL-Linear & 0.812\,{\scriptsize$\pm$0.061} & 0.813\,{\scriptsize$\pm$0.072} & -0.001\,{\scriptsize$\pm$0.023} & 0.805\,{\scriptsize$\pm$0.080} & 0.008\,{\scriptsize$\pm$0.047}\\
+EDL-RFF & 0.810\,{\scriptsize$\pm$0.053} & 0.801\,{\scriptsize$\pm$0.045} & 0.009\,{\scriptsize$\pm$0.024} & 0.767\,{\scriptsize$\pm$0.054} & 0.043\,{\scriptsize$\pm$0.043}\\
+\bottomrule\end{tabular}

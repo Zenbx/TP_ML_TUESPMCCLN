@@ -1,0 +1,12 @@
+\begin{tabular}{lcccccc}\toprule
+Model + score & Acc & BA$_{1.0}$ & BA$_{0.7}$ & $\Delta$BER & ECE$\downarrow$ & BA$_{1.0}$ (20\% noise)\\\midrule
+Softmax LogReg (SGA) + entropy & 0.907\,{\scriptsize$\pm$0.009} & 0.880\,{\scriptsize$\pm$0.010} & 0.937\,{\scriptsize$\pm$0.011} & 48\% & 0.034\,{\scriptsize$\pm$0.008} & 0.874\,{\scriptsize$\pm$0.010}\\
+Softmax LogReg, $\lambda$=0.05 & 0.907\,{\scriptsize$\pm$0.010} & 0.876\,{\scriptsize$\pm$0.012} & 0.930\,{\scriptsize$\pm$0.009} & 44\% & 0.110\,{\scriptsize$\pm$0.011} & 0.865\,{\scriptsize$\pm$0.010}\\
+Gradient boosting + entropy & 0.946\,{\scriptsize$\pm$0.006} & 0.925\,{\scriptsize$\pm$0.010} & 0.966\,{\scriptsize$\pm$0.006} & 55\% & 0.044\,{\scriptsize$\pm$0.008} & 0.899\,{\scriptsize$\pm$0.011}\\
+LogReg ensemble (H) & 0.907\,{\scriptsize$\pm$0.008} & 0.879\,{\scriptsize$\pm$0.009} & 0.939\,{\scriptsize$\pm$0.010} & 49\% & 0.036\,{\scriptsize$\pm$0.008} & 0.872\,{\scriptsize$\pm$0.011}\\
+LogReg ensemble (MI) & 0.907\,{\scriptsize$\pm$0.008} & 0.879\,{\scriptsize$\pm$0.009} & 0.939\,{\scriptsize$\pm$0.011} & 50\% & 0.036\,{\scriptsize$\pm$0.008} & 0.872\,{\scriptsize$\pm$0.011}\\
+EDL-Linear (H) & 0.908\,{\scriptsize$\pm$0.008} & 0.873\,{\scriptsize$\pm$0.011} & 0.929\,{\scriptsize$\pm$0.010} & 44\% & 0.141\,{\scriptsize$\pm$0.007} & 0.869\,{\scriptsize$\pm$0.010}\\
+EDL-Linear ($u$) & 0.908\,{\scriptsize$\pm$0.008} & 0.873\,{\scriptsize$\pm$0.011} & 0.889\,{\scriptsize$\pm$0.012} & 12\% & 0.141\,{\scriptsize$\pm$0.007} & 0.869\,{\scriptsize$\pm$0.010}\\
+EDL-RFF (H) & 0.894\,{\scriptsize$\pm$0.009} & 0.856\,{\scriptsize$\pm$0.013} & 0.935\,{\scriptsize$\pm$0.011} & 55\% & 0.106\,{\scriptsize$\pm$0.007} & 0.837\,{\scriptsize$\pm$0.012}\\
+EDL-RFF ($u$) & 0.894\,{\scriptsize$\pm$0.009} & 0.856\,{\scriptsize$\pm$0.013} & 0.904\,{\scriptsize$\pm$0.014} & 34\% & 0.106\,{\scriptsize$\pm$0.007} & 0.837\,{\scriptsize$\pm$0.012}\\
+\bottomrule\end{tabular}

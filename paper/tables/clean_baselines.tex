@@ -1,0 +1,13 @@
+\begin{tabular}{lcccccccc}\toprule
+ & \multicolumn{4}{c}{Dataset A (Wisconsin, real)} & \multicolumn{4}{c}{Dataset B (synthetic)}\\
+\cmidrule(lr){2-5}\cmidrule(lr){6-9}
+Model & F1 & BA & ROC-AUC & PR-AUC & F1 & BA & ROC-AUC & PR-AUC\\\midrule
+LogReg (SGA) & 0.67\,{\scriptsize$\pm$0.10} & 0.801\,{\scriptsize$\pm$0.061} & 0.923\,{\scriptsize$\pm$0.033} & 0.771\,{\scriptsize$\pm$0.074} & 0.77\,{\scriptsize$\pm$0.01} & 0.868\,{\scriptsize$\pm$0.008} & 0.926\,{\scriptsize$\pm$0.009} & 0.827\,{\scriptsize$\pm$0.015}\\
+Naive Bayes & 0.65\,{\scriptsize$\pm$0.11} & 0.779\,{\scriptsize$\pm$0.065} & 0.902\,{\scriptsize$\pm$0.052} & 0.764\,{\scriptsize$\pm$0.097} & 0.65\,{\scriptsize$\pm$0.01} & 0.835\,{\scriptsize$\pm$0.006} & 0.918\,{\scriptsize$\pm$0.011} & 0.724\,{\scriptsize$\pm$0.011}\\
+KNN ($k$=15) & 0.64\,{\scriptsize$\pm$0.10} & 0.743\,{\scriptsize$\pm$0.055} & 0.908\,{\scriptsize$\pm$0.042} & 0.766\,{\scriptsize$\pm$0.078} & 0.54\,{\scriptsize$\pm$0.03} & 0.686\,{\scriptsize$\pm$0.016} & 0.918\,{\scriptsize$\pm$0.013} & 0.781\,{\scriptsize$\pm$0.022}\\
+Decision tree (d=5) & 0.63\,{\scriptsize$\pm$0.09} & 0.786\,{\scriptsize$\pm$0.061} & 0.788\,{\scriptsize$\pm$0.071} & 0.509\,{\scriptsize$\pm$0.108} & 0.70\,{\scriptsize$\pm$0.03} & 0.829\,{\scriptsize$\pm$0.019} & 0.860\,{\scriptsize$\pm$0.018} & 0.648\,{\scriptsize$\pm$0.034}\\
+AdaBoost & 0.68\,{\scriptsize$\pm$0.10} & 0.803\,{\scriptsize$\pm$0.064} & 0.914\,{\scriptsize$\pm$0.041} & 0.770\,{\scriptsize$\pm$0.080} & 0.73\,{\scriptsize$\pm$0.02} & 0.860\,{\scriptsize$\pm$0.015} & 0.928\,{\scriptsize$\pm$0.006} & 0.785\,{\scriptsize$\pm$0.017}\\
+Gradient boosting & 0.70\,{\scriptsize$\pm$0.06} & 0.819\,{\scriptsize$\pm$0.043} & 0.916\,{\scriptsize$\pm$0.036} & 0.767\,{\scriptsize$\pm$0.086} & 0.84\,{\scriptsize$\pm$0.02} & 0.901\,{\scriptsize$\pm$0.012} & 0.953\,{\scriptsize$\pm$0.011} & 0.883\,{\scriptsize$\pm$0.018}\\
+Linear SVM & 0.75\,{\scriptsize$\pm$0.07} & 0.824\,{\scriptsize$\pm$0.047} & 0.949\,{\scriptsize$\pm$0.027} & 0.850\,{\scriptsize$\pm$0.063} & 0.79\,{\scriptsize$\pm$0.02} & 0.835\,{\scriptsize$\pm$0.015} & 0.924\,{\scriptsize$\pm$0.009} & 0.829\,{\scriptsize$\pm$0.015}\\
+RBF-SVM & 0.64\,{\scriptsize$\pm$0.12} & 0.761\,{\scriptsize$\pm$0.067} & 0.926\,{\scriptsize$\pm$0.028} & 0.788\,{\scriptsize$\pm$0.074} & 0.86\,{\scriptsize$\pm$0.02} & 0.894\,{\scriptsize$\pm$0.011} & 0.946\,{\scriptsize$\pm$0.013} & 0.880\,{\scriptsize$\pm$0.015}\\
+\bottomrule\end{tabular}
